@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeDeal</title>
+
+<style>
+
+body{
+background:#0f172a;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.card{
+background:white;
+padding:30px;
+width:300px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+h1{
+color:#16a34a;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#16a34a;
+color:white;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+p{
+color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>SafeDeal</h1>
+
+<p>Secure Gaming Deals</p>
+
+<input type="text" placeholder="Phone Number">
+
+<button>Login</button>
+
+</div>
+
+<script>
+
+document.querySelector("button").addEventListener("click",function(){
+
+window.location.href="home.html";
+
+});
+
+</script>
+
+</body>
+</html>

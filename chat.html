@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SafeDeal Chat</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
+}
+
+.header{
+background:#16a34a;
+color:white;
+padding:15px;
+text-align:center;
+font-size:20px;
+}
+
+.chat{
+padding:15px;
+}
+
+.msg{
+background:white;
+padding:10px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.buyer{
+border-left:5px solid blue;
+}
+
+.seller{
+border-left:5px solid orange;
+}
+
+.admin{
+border-left:5px solid green;
+}
+
+.input-box{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+background:white;
+padding:10px;
+}
+
+input{
+flex:1;
+padding:10px;
+}
+
+button{
+background:#16a34a;
+color:white;
+border:none;
+padding:10px 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Deal Chat Room
+</div>
+
+<div class="chat">
+
+<div class="msg buyer">
+<b>Buyer:</b> আমি 2100 UC কিনতে চাই
+</div>
+
+<div class="msg seller">
+<b>Seller:</b> ঠিক আছে
+</div>
+
+<div class="msg admin">
+<b>Admin:</b> Buyer টাকা পাঠান
+</div>
+
+<div class="msg buyer">
+<b>Buyer:</b> টাকা পাঠানো হয়েছে
+</div>
+
+<div class="msg admin">
+<b>Admin:</b> টাকা পেয়েছি
+</div>
+
+<div class="msg seller">
+<b>Seller:</b> UC পাঠানো হয়েছে
+</div>
+
+<div class="msg buyer">
+<b>Buyer:</b> পেয়েছি
+</div>
+
+<div class="msg admin">
+<b>Admin:</b> Deal Completed ✅
+</div>
+
+</div>
+
+<div class="input-box">
+<input placeholder="Type message...">
+<button>Send</button>
+</div>
+
+<div style="padding:15px;">
+
+<button onclick="window.location.href='completed.html'"
+style="width:100%;padding:12px;background:green;color:white;border:none;border-radius:10px;margin-bottom:10px;">
+
+✅ Complete Deal
+
+</button>
+
+<button
+style="width:100%;padding:12px;background:red;color:white;border:none;border-radius:10px;">
+
+❌ Cancel Deal
+
+</button>
+
+</div>
+
+</body>
+</html></div>
+
+</body>
+</html>
