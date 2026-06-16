@@ -45,22 +45,27 @@ border-left:5px solid green;
 .input-box{
 position:fixed;
 bottom:0;
-width:100%;
+left:0;
+right:0;
 display:flex;
 background:white;
 padding:10px;
+box-sizing:border-box;
 }
 
-input{
+.input-box input{
 flex:1;
 padding:10px;
+border:1px solid #ccc;
+margin-right:5px;
 }
 
-button{
+.input-box button{
+width:80px;
+padding:10px;
 background:#16a34a;
 color:white;
 border:none;
-padding:10px 15px;
 }
 
 </style>
