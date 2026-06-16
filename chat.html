@@ -131,8 +131,40 @@ style="width:100%;padding:12px;background:red;color:white;border:none;border-rad
 
 </div>
 
-</body>
-</html></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const supabaseUrl = "https://lbmrezhhralreybnsktk.supabase.co";
+const supabaseKey = "sb_publishable_esnytXJsHLpa9wFlNoKxIg_OaWXblbI";
+
+const supabase = window.supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);
+
+async function sendMessage() {
+  const input = document.querySelector("input");
+
+  if (!input.value) return;
+
+  const { error } = await supabase
+    .from("messages")
+    .insert([
+      {
+        sender: "buyer",
+        message: input.value
+      }
+    ]);
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  alert("Message Saved!");
+  input.value = "";
+}
+</script>
 
 </body>
 </html>
