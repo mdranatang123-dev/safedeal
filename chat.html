@@ -143,6 +143,8 @@ const supabase = window.supabase.createClient(
 );
 alert("Supabase Loaded");
 async function sendMessage() {
+  alert("Button Clicked");
+
   const input = document.querySelector("input");
 
   if (!input.value) return;
